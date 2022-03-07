@@ -1,0 +1,61 @@
+/* .grid-container {
+    display: grid;
+    grid-template-areas: 
+    "header" 
+    "main" 
+    "footer";
+} */
+
+.background-image-container{
+    background-image: url(moonlake.jpg);
+    background-size: cover;
+    background-position: 100%;
+}
+header{
+  
+    height: 33%;
+}
+h1 {
+    color: black;
+    font-family: cursive;
+    height: 150px;
+    margin: 0;
+    text-align: center;
+    padding-top: 175px;
+}
+
+.nav-bar a {
+    color: black;
+    font-size: x-large;
+    font-family: cursive;
+    padding-left: 50px;
+    margin: 0;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: aqua;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
