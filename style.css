@@ -1,10 +1,14 @@
-/* .grid-container {
+.grid-container {
     display: grid;
     grid-template-areas: 
     "header" 
     "main" 
     "footer";
-} */
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 .background-image-container{
     background-image: url(moonlake.jpg);
@@ -12,22 +16,24 @@
     background-position: 100%;
 }
 header{
-  
-    height: 33%;
+  width: 100%;
+  height: 100%;
+    
 }
 h1 {
     color: black;
-    font-family: cursive;
+    font-family:'Cedarville Cursive';
     height: 150px;
     margin: 0;
     text-align: center;
-    padding-top: 175px;
+    padding-top: 550px;
+    font-size: xx-large;
 }
 
 .nav-bar a {
     color: black;
     font-size: x-large;
-    font-family: cursive;
+    font-family: 'Cedarville Cursive';
     padding-left: 50px;
     margin: 0;
 }
@@ -39,16 +45,61 @@ h1 {
     background-color: aqua;
 }
 
+main {
+    align-items: center;
+}
 
+.main-about {
+display:grid;
+grid-template-areas:'text video';
+justify-content:space-evenly;
+margin-top:50px;
+}
+.main-about p{
+    grid-area:text;
+    max-width:560px;
+}
+.main-about iframe{
+    grid-area:video;
+}
 
+.main-index {
+    display:grid;
+    grid-template-areas:'text video';
+    justify-content:space-evenly;
+    margin-top:50px;
+    }
+    .main-index p{
+        grid-area:text;
+        max-width:560px;
+    }
+    .main-index iframe{
+        grid-area:video;
+    }
+input {
+    font-size:xx-large
 
-
-
-
-
-
-
-
+}
+.subscribe {
+margin-left: 200px;
+text-align: center;
+width:500px;
+position:absolute;
+right:0px;
+}
+.subscribe-box {
+    width: 100%;
+    position:relative;
+margin-top:20px;
+}
+footer {
+    text-align:left;
+    width:100%;
+    margin-top: 300px;
+}
+* {
+    margin:0px;
+}
 
 
 
