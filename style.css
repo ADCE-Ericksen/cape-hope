@@ -22,8 +22,7 @@ header{
 }
 h1 {
     color: black;
-    font-family:'Cedarville Cursive';
-    height: 150px;
+       height: 150px;
     margin: 0;
     text-align: center;
     padding-top: 550px;
@@ -33,7 +32,6 @@ h1 {
 .nav-bar a {
     color: black;
     font-size: x-large;
-    font-family: 'Cedarville Cursive';
     padding-left: 50px;
     margin: 0;
 }
@@ -100,13 +98,35 @@ footer {
 * {
     margin:0px;
 }
+.main-staff img {
+height: 250px;
+width: 250px;
+}
 
+.main-staff p {
+    width: 250px;
+    text-align:center;
+}
+.main-staff div {
+    
+    padding: 12px;
+}
+.main-staff {
+    display:flex;
+    align-items:center;
+}
 
+.main-services img {
+object-fit:cover;
+width: 450px;
+height: 250px;
 
-
-
-
-
-
-
+}
+.main-services div {
+flex:1;
+}
+.main-services {
+    display:flex;
+    justify-content:center;
+}
 
