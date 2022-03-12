@@ -11,7 +11,7 @@ body{
 }
 
 .background-image-container{
-    background-image: url(moonlake.jpg);
+    background-image: url(images/moonlake.jpg);
     background-size: cover;
     background-position: 100%;
 }
@@ -63,7 +63,11 @@ margin-top:50px;
 
 .main-index {
     display:grid;
-    grid-template-areas:'text video';
+    grid-template-areas:
+        'text video'
+        'quotes .'
+        '. address';
+
     justify-content:space-evenly;
     margin-top:50px;
     }
@@ -74,6 +78,19 @@ margin-top:50px;
     .main-index iframe{
         grid-area:video;
     }
+    .quotes {
+        grid-area:quotes;  
+                 
+    }
+    .quotes img {
+        width: 250px;
+    }
+    .main-index address {
+        grid-area: address;
+        align-self:flex-end;
+        justify-self:flex-end;
+    }
+
 input {
     font-size:xx-large
 
@@ -128,5 +145,6 @@ flex:1;
 .main-services {
     display:flex;
     justify-content:center;
+    margin: 20px;
 }
 
