@@ -62,31 +62,22 @@ margin-top:50px;
 }
 
 .main-index {
-    display:grid;
-    grid-template-areas:
-        'text video'
-        'quotes .'
-        '. address';
-
-    justify-content:space-evenly;
-    margin-top:50px;
+        margin-top:50px;
     }
     .main-index p{
-        grid-area:text;
-        max-width:560px;
+        font-size:x-large;
     }
-    .main-index iframe{
-        grid-area:video;
-    }
+   
     .quotes {
-        grid-area:quotes;  
+        display:flex;  
+        justify-content:space-around;
                  
     }
     .quotes img {
         width: 250px;
     }
     .main-index address {
-        grid-area: address;
+        
         align-self:flex-end;
         justify-self:flex-end;
     }
@@ -108,9 +99,10 @@ right:0px;
 margin-top:20px;
 }
 footer {
-    text-align:left;
-    width:100%;
-    margin-top: 300px;
+    display:flex;
+    justify-content:space-between;
+    margin: 300px 12px 12px 12px;
+
 }
 * {
     margin:0px;
@@ -134,9 +126,9 @@ width: 250px;
 }
 
 .main-services img {
-object-fit:cover;
-width: 450px;
-height: 250px;
+object-fit:center;
+width: 425px;
+height: auto;
 
 }
 .main-services div {
