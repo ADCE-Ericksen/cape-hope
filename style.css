@@ -5,11 +5,9 @@
     "main" 
     "footer";
 }
-
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 .background-image-container{
     background-image: url(images/moonlake.jpg);
     background-size: cover;
@@ -18,8 +16,7 @@ body{
 header{
   width: 100%;
   height: 100%;
-    
-}
+  }
 h1 {
     color: black;
        height: 150px;
@@ -28,63 +25,67 @@ h1 {
     padding-top: 550px;
     font-size: xx-large;
 }
-
 .nav-bar a {
     color: black;
     font-size: x-large;
     padding-left: 50px;
     margin: 0;
 }
-
 .nav-container {
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: aqua;
 }
-
 main {
     align-items: center;
 }
-
 .main-about {
-display:grid;
-grid-template-areas:'text video';
-justify-content:space-evenly;
 margin-top:50px;
+}
+.main-about blockquote {
+    display:flex;  
+    justify-content:space-evenly;
+    margin:25px;
+    font-size:xx-large;
+    max-width:400px;
+}
+.main-about div {
+display:flex;
+align-items:center;
+justify-content:space-evenly;
+margin-bottom:50px;
 }
 .main-about p{
     grid-area:text;
     max-width:560px;
+    font-size:x-large;
 }
 .main-about iframe{
     grid-area:video;
 }
-
 .main-index {
         margin-top:50px;
-    }
+           }
     .main-index p{
         font-size:x-large;
+        max-width:400px;
     }
-   
-    .quotes {
+       .quotes {
         display:flex;  
         justify-content:space-around;
-                 
-    }
-    .quotes img {
-        width: 250px;
+        margin:25px;
+    }    .quotes img {
+        object-fit:cover;
+        width: 400px;
+        height:550px;
     }
     .main-index address {
-        
-        align-self:flex-end;
+       align-self:flex-end;
         justify-self:flex-end;
     }
-
 input {
     font-size:xx-large
-
 }
 .subscribe {
 margin-left: 200px;
@@ -102,16 +103,14 @@ footer {
     display:flex;
     justify-content:space-between;
     margin: 300px 12px 12px 12px;
-
 }
-* {
+/* * {
     margin:0px;
-}
+} */
 .main-staff img {
 height: 250px;
 width: 250px;
 }
-
 .main-staff p {
     width: 250px;
     text-align:center;
@@ -122,14 +121,14 @@ width: 250px;
 }
 .main-staff {
     display:flex;
-    align-items:center;
+    align-items:flex-start;
+    flex-wrap:wrap;
+    margin-top:20px;
 }
-
 .main-services img {
 object-fit:center;
 width: 425px;
 height: auto;
-
 }
 .main-services div {
 flex:1;
@@ -138,5 +137,28 @@ flex:1;
     display:flex;
     justify-content:center;
     margin: 20px;
+}
+.main-programs-and-activities img{
+   object-fit:center;
+   height:475px;
+   width:450px;
+}
+.main-programs-and-activities div{
+    flex:1;
+}
+.main-programs-and-activities {
+    display:flex;
+    justify-content:center;
+    margin: 75px;
+}
+.photo-gallery img {
+    object-fit:center;
+    height:500px;
+    width:auto;
+}
+.photo-gallery {
+    display:flex;
+    justify-content:center;
+    margin: 50px;
 }
 
