@@ -44,7 +44,7 @@ main {
 margin-top:50px;
 }
 .main-about blockquote {
-    display:flex;  
+      
     justify-content:space-evenly;
     margin:25px;
     font-size:xx-large;
